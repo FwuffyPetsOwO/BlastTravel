@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "blasttravel",
+  "version": "${version}",
+
+  "name": "Blast Travel",
+  "description": "Cannon-based player transport",
+  "contact": {
+    "homepage": "https://github.com/FoundationGames/BlastTravel",
+    "issues": "https://github.com/FoundationGames/BlastTravel/issues",
+    "sources": "https://github.com/FoundationGames/BlastTravel"
+  },
+  "icon": "assets/blasttravel/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "foundationgames.blasttravel.BlastTravel"
+    ],
+    "client": [
+      "foundationgames.blasttravel.client.BlastTravelClient"
+    ]
+  },
+
+  "depends": {
+    "minecraft": ">=1.19.2",
+    "java": ">=17",
+    "fabric": ">=0.60.0",
+    "jsonem": ">=0.1.2"
+  },
+
+  "mixins": [
+    "blasttravel.mixins.json"
+  ],
+  "accessWidener": "blasttravel.accesswidener"
+}
